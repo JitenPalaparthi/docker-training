@@ -145,3 +145,7 @@ quay
 ### How to push the image to the registry
 
 ```docker push jpalaparthi/ubuntuplus```
+
+### Build docker file with another filename
+
+```docker build . -f PingDockerfile -t jpalaparthi/pingapp```
