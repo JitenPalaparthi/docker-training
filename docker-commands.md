@@ -115,3 +115,33 @@
 ### To mount host directoy using -v option
 
 ```docker run -d --name n4 -v "$(pwd)"/workspace:/myworkspace nginx```
+
+### Container registries
+
+Docker hub
+acr
+gcr
+quay
+
+### Dockerfiles
+
+- Docker file consistrs of few commands
+- The default file name is Dockerfile. But can give any file name.
+- There should be a base image
+
+- Create an ubuntu image with vim installed.
+- the manual steps that are involved are
+```apt-get update -y```
+```apt-get upgrade -y```
+```apt-get install vim -y```
+
+- RUN command is used to execute commands in the shell
+- Every RUN command creates a new layer
+
+### How to build docker file
+
+```docker build . -t jpalaparthi/ubuntuplus```
+
+### How to push the image to the registry
+
+```docker push jpalaparthi/ubuntuplus```
