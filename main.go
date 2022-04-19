@@ -11,5 +11,9 @@ func main() {
 		fmt.Fprintln(w, "Pong")
 	})
 	port := os.Getenv("PORT")
+	if port == "" {
+		port = "50052"
+	}
+
 	http.ListenAndServe(":"+port, nil)
 }
