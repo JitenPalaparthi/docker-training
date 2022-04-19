@@ -1,0 +1,11 @@
+FROM ubuntu
+
+WORKDIR /app
+
+ADD app .
+
+RUN chmod 777 app
+
+EXPOSE 50089
+
+CMD ["./app"]

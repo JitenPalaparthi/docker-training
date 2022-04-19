@@ -1,0 +1,13 @@
+FROM alpine
+
+WORKDIR /app
+
+ADD app .
+
+RUN chmod 777 app
+
+ENV PORT=50092
+
+EXPOSE 50092
+
+ENTRYPOINT [ "./app" ]

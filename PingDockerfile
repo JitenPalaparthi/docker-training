@@ -20,6 +20,10 @@ EXPOSE 50089
 
 ENTRYPOINT [ "./app" ]
 
+CMD ["/bin/sh","echo","Hello World"]
+
+# GOARCH=amd64 && GOOS=linux go build -o app main.go
+
 
 
 
